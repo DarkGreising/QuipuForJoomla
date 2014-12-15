@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">        
+        <field
+            name="invoice_number"
+            type="secuencia"
+            iw_familia="invoice"
+            iw_campo="numero"
+            label="COM_QUIPU_NUMBER"
+            size="40"
+            required="true"
+            class="inputbox"
+            default=""
+            readonly="true"
+            />
+        <field  name="customer_id"
+                type="Customer"
+                class="inputbox"
+                label="COM_QUIPU_CUSTOMER"
+
+                />
+        <field  name="bankaccount_id"
+                type="BankAccount"
+                class="inputbox"
+                label="COM_QUIPU_INVOICE_BANK"
+
+                />                
+        <field
+            name="payment_method"
+            type="text"
+            label="COM_QUIPU_PAYMENT_METHOD"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="customer_reference"
+            type="text"
+            label="COM_QUIPU_CUSTOMER_REF"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="invoice_date"
+            type="calendar"
+            label="COM_QUIPU_INVOICE_DATE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="due_date"
+            type="calendar"
+            label="COM_QUIPU_INVOICE_DUE_DATE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="payment_date"
+            type="calendar"
+            label="COM_QUIPU_PAYMENT_DATE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="base"
+            type="text"
+            label="COM_QUIPU_BASE_PRICE"
+            size="40"
+            class="inputbox"
+            default=""
+            readonly="true"
+            />
+        <field
+            name="total_tax"
+            type="text"
+            label="COM_QUIPU_TAXES"
+            size="40"
+            class="inputbox"
+            default=""
+            readonly="true"
+            />
+        <field
+            name="retentions"
+            type="text"
+            label="COM_QUIPU_RETENTIONS"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="id"
+            type="hidden"
+            />
+        <field
+            name="order_id"
+            type="hidden"
+            />
+        <field
+            name="status"
+            type="hidden"
+            />                    
+    </fieldset>
+    <fieldset name="memo">
+        <field
+            name="memo"
+            type="textarea"
+            rows="15"            
+            label="COM_QUIPU_MEMO"
+            class="inputbox"
+            default=""
+            />
+    </fieldset>
+    <fieldset name="actions">
+        <field
+            name="acciones"
+            type="invoiceactions"
+            label="COM_QUIPU_"
+            class="inputbox"
+            default=""
+            />
+    </fieldset>
+    <fieldset name="detail">
+        <field
+            name="detalle"
+            type="detailitems"
+            iw_master = "invoice"
+            editable="false"
+            />
+    </fieldset>    
+</form>
+

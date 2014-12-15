@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Panel de Control del Usuario">
+		<message>Vista del Panel de Control.</message>
+	</layout>
+
+	<fields group="request" name="request" array="true"
+		addfieldpath="/administrator/components/com_seysconecta/models/fields">
+		<fieldset name="request">
+			<field
+				name="modo"
+				type="list"
+				label="Modo del panel de control"
+				description="Determina el conjunto de widgets a mostrar"
+				default="panel"
+			>
+				<option value="panel">Página de Inicio</option>
+				<option value="master">Datos Maestros</option>
+				<option value="docs">Gestor Documental</option>
+                                <option value="usuarios">Gestión de Usuarios</option>
+				<option value="empresas">Mis Empresas</option>
+				<option value="relaciones">Gestión Relaciones</option>
+                                <option value="accesos">Control de Accesos</option>
+				<option value="acciones">Gestión Acciones</option>
+                                <option value="analytics-gdoc">Gestión Documental</option>
+                                <option value="analytics-exp">Expedientes</option>
+                                <option value="analytics-cae">Gestión de Acciones</option>                                
+                                <option value="proyectos">Gestión Proyectos</option>
+
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

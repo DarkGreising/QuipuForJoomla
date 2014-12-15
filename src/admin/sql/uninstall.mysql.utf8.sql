@@ -1,0 +1,17 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE `#__quipu_bank_account`;
+DROP TABLE `#__quipu_bank_activity`; 
+DROP TABLE `#__quipu_config`; 
+DROP TABLE `#__quipu_customer`; 
+DROP TABLE `#__quipu_detail_item`; 
+DROP TABLE `#__quipu_invoice`; 
+DROP TABLE `#__quipu_item`; 
+DROP TABLE `#__quipu_item_category`; 
+DROP TABLE `#__quipu_order`; 
+DROP TABLE `#__quipu_tax`; 
+DROP TABLE `#__quipu_invoice_bank_activity_xref`;
+DROP TABLE `#__quipu_sequence`;
+DROP TABLE `#__quipu_purchaseorder_bank_activity_xref`;
+DROP TABLE `#__quipu_purchase_order`;
+DROP TABLE `#__quipu_supplier`;
+SET FOREIGN_KEY_CHECKS=1;

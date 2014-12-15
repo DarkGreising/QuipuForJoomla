@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.site/administrator/index.php?option=com_quipu" />
+<title>25_en_crud_category</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">25_en_crud_category</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/administrator/index.php?option=com_quipu&amp;view=taxes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Categories')])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.icon-32-new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.icon-32-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>New product category</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Save &amp; Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Field required: Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>SELENIUM</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save-new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Item successfully saved.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=jform_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>TEST</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Item successfully saved.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>TEST mod</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save-new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>New product category</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Item successfully saved.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Item successfully saved.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Categories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>2 items successfully deleted.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

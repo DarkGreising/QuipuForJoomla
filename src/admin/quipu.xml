@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade"> 
+    <name>Quipu</name>    
+    <creationDate>Spring 2014</creationDate>
+    <author>Nacho Brito</author>
+    <authorEmail>nacho@nachobrito.com</authorEmail>
+    <authorUrl>https://github.com/NachoBrito/QuipuForJoomla</authorUrl>
+    <copyright>Copyright Nacho Brito</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	
+    <!--  The version string is recorded in the components table -->
+    <version>1.0.13</version>
+	
+    <!-- The description is optional and defaults to the name -->
+    <description>COM_QUIPU_DESCRIPTION</description>
+ 
+    <!-- Runs on install/uninstall/update; New in 2.5 -->
+    <scriptfile>script.php</scriptfile>
+ 
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update> <!-- Runs on update; New in 2.5 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+ 
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>quipu.php</filename>
+        <filename>controller.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>assets</folder>
+    </files>
+    <administration>
+        <menu img="components/com_quipu/assets/images/icon-16.png">COM_QUIPU</menu>
+        
+        <submenu>
+            <menu view="panel">COM_QUIPU_SUBMENU_PANEL</menu>            
+            <menu view="customers">COM_QUIPU_SUBMENU_PANEL_CUSTOMERS</menu>            
+            <menu view="orders">COM_QUIPU_SUBMENU_PANEL_ORDERS</menu> 
+            <menu view="invoices">COM_QUIPU_SUBMENU_PANEL_INVOICES</menu>            
+            <menu view="suppliers">COM_QUIPU_SUBMENU_PANEL_SUPPLIERS</menu>            
+            <menu view="purchaseorders">COM_QUIPU_SUBMENU_PANEL_PURCHASEORDERS</menu> 
+            <menu view="bankaccounts">COM_QUIPU_SUBMENU_PANEL_BANK_ACCOUNTS</menu>            
+            <menu view="bankactivities">COM_QUIPU_SUBMENU_PANEL_BANK_ACTIVITIES</menu>                                                          
+            <menu view="itemcategories">COM_QUIPU_SUBMENU_PANEL_ITEM_CATEGORIES</menu>            
+            <menu view="items">COM_QUIPU_SUBMENU_PANEL_ITEMS</menu>                                    
+            <menu view="taxes">COM_QUIPU_SUBMENU_PANEL_TAXES</menu>            
+        </submenu>
+        
+        <files folder="admin">
+            <!-- Admin Main File Copy Section -->
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <filename>quipu.php</filename>
+            <filename>controller.php</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>services</folder>
+            <folder>assets</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="es-ES">language/es-ES/es-ES.com_quipu.ini</language>			
+            <language tag="es-ES">language/es-ES/es-ES.com_quipu.sys.ini</language>			
+            <language tag="en-GB">language/en-GB/en-GB.com_quipu.ini</language>         
+            <language tag="en-GB">language/en-GB/en-GB.com_quipu.sys.ini</language>         
+            <language tag="fr-FR">language/fr-FR/fr-FR.com_quipu.ini</language>			
+            <language tag="fr-FR">language/fr-FR/fr-FR.com_quipu.sys.ini</language>			
+        </languages>
+    </administration>
+    <!-- UPDATESERVER DEFINITION -->
+    <updateservers>		
+        <server type="extension" priority="1" name="Quipu ERP updates">https://github.com/NachoBrito/QuipuForJoomla/quipu-updates?format=.xml</server>
+    </updateservers>
+</extension>

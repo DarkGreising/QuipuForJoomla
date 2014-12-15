@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field
+            name="order_number"
+            type="sequence"
+            iw_familia="order"
+            iw_campo="order_number"
+            label="COM_QUIPU_NUMBER"
+            size="40"
+            required="true"
+            class="inputbox"
+            default=""
+            />
+        <field  name="customer_id"
+                type="CUSTOMER"
+                class="inputbox"                
+                label="COM_QUIPU_CUSTOMER"
+
+                />
+        <field
+            name="order_date"
+            type="calendar"
+            label="COM_QUIPU_DATE"
+            size="40"
+            class="inputbox"
+            default=""            
+            />
+        <field
+            name="customer_reference"
+            type="text"
+            label="COM_QUIPU_CUSTOMER_REF"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="id"
+            type="hidden"
+            />
+        <field
+            name="status"
+            type="hidden"
+            />        
+    </fieldset>
+    <fieldset name="memo">
+        <field
+            name="memo"
+            type="textarea"
+            rows="15"            
+            label="COM_QUIPU_MEMO"
+            class="inputbox"
+            default=""
+            />
+    </fieldset>
+    <fieldset name="actions">
+        <field
+            name="actions"
+            type="orderactions"
+            label="COM_QUIPU_"
+            class="inputbox"
+            default=""
+            />
+    </fieldset>
+    <fieldset name="detail">
+        <field
+            name="detail"
+            type="detailitems"
+            iw_master = "order"
+            />
+    </fieldset>
+</form>
+

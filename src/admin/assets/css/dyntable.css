@@ -1,0 +1,137 @@
+
+table#dynTable tr.noDataRow td {
+    text-align: center;
+}
+table#dynTable tr:hover, table#dynTable tr:hover td{
+    background-color: #eee;
+}
+table#dynTable td.editable
+{
+    width: 200px;
+    height: 22px;
+}
+table#dynTable td.editable .inputbox{
+    margin:0;
+}
+table#dynTable th.sortable
+{
+    cursor: pointer;
+}
+
+table#dynTable tr.loading {
+    color: #dddddd;
+    background-color: #f6f6f6;
+}
+
+table#dynTable td.loading
+{
+    background: url('../images/loading.gif') no-repeat 4px center;
+    padding-left: 24px;
+    color: #aaaaaa;
+    width: 176px;
+}
+
+table#dynTable td.delete {
+    background: url('../images/delete.png') no-repeat center;
+    cursor: pointer;
+}
+
+table#dynTable td.delete label {
+    display: none;
+}
+
+table#dynTable.activated th.edit,
+table.activated td.edit {
+    display: none;
+}
+
+table#dynTable.activated td.delete input {
+    display: none;
+}
+
+table#dynTable.activated td.delete label {
+    display: block;
+}
+
+form fieldset.errors {
+    color: red;
+}
+
+form fieldset.errors p {
+    margin: 0.2em;
+}
+
+form div.submit {
+    padding: 1em;
+    text-align: right;
+}
+
+form div.submit input {
+    cursor: pointer;
+}
+
+form.newRow h3 {
+    margin: 0;
+}
+
+form.newRow th.edit,
+form.newRow td.edit,
+form.newRow th.delete,
+form.newRow td.delete {
+    display: none;
+}
+
+.pagination {
+    margin: 1em 0;
+    color: #888888;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.pagination a {
+    color: #6666ff;
+}
+
+.pagination .prev 
+{
+    float: left;
+}
+
+.pagination .next
+{
+    float: right;
+}
+
+.pagination .pages
+{
+    text-align: center;
+}
+
+div.error {
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    color: #d44;
+    font-weight: bold;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+table.adminlist{
+    margin:0 0 60px 0; 
+}
+table.adminlist tbody td.actionIcons{
+}
+table.adminlist tbody td.actionIcons a{
+    display: inline;
+    margin: 0 5px;
+}
+table.adminlist tbody td a.icon{
+    display:inline;
+}
+
+
+span.prio_1{padding:3px 5px;background:#ccff66}
+span.prio_2{padding:3px 5px;background:#ffff66}
+span.prio_3{padding:3px 5px;background:#ffcc66}
+span.prio_4{padding:3px 5px;background:#ff9966}
+span.prio_5{padding:3px 5px;background:#f47070}

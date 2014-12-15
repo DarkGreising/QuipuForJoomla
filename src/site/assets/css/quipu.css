@@ -1,0 +1,32 @@
+#quipu-customer-data, #quipu-customer-orders{
+    display: table;
+    margin: 20px 0;
+}
+.quipu-customer-data-item,.quipu-customer-orders-header,.quipu-customer-order{
+    display:table-row;    
+}
+.quipu-customer-data-item-name, .quipu-customer-data-item-name,.quipu-customer-order-item, .quipu-customer-order-header-item{
+    display:table-cell;
+    padding: 5px;
+}
+.quipu-customer-data-item-name{
+    font-weight: bold;
+    margin: 0 20px 0 0;
+}
+.quipu-customer-data-item-value{
+    
+}
+#quipu-customer-orders{
+    width: 100%;
+}
+.quipu-customer-order:hover{
+    background: #f5f5f5;
+    text-shadow: 1px 1px 1px #ccc;    
+}
+.quipu-customer-order-item, .quipu-customer-order-header-item{
+    text-align: center;
+}
+.quipu-customer-order-header-item{
+    background: #666;
+    color: #fff;
+}

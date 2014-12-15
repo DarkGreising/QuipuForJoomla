@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field
+            name="order_number"
+            type="sequence"
+            iw_familia="order"
+            iw_campo="order_number"
+            label="COM_QUIPU_NUMBER"
+            size="40"
+            required="true"
+            class="inputbox"
+            default=""
+            />
+        <field  name="supplier_id"
+                type="SUPPLIER"
+                class="inputbox"                
+                label="COM_QUIPU_SUPPLIER"
+
+                />
+        <field  name="bankaccount_id"
+                type="BankAccount"
+                class="inputbox"
+                label="COM_QUIPU_PURCHASE_ORDER_BANK"
+
+                />        
+        <field
+            name="order_date"
+            type="calendar"
+            label="COM_QUIPU_DATE"
+            size="40"
+            class="inputbox"
+            default=""            
+            />
+        <field
+            name="payment_date"
+            type="calendar"
+            label="COM_QUIPU_PAYMENT_DATE"
+            size="40"
+            class="inputbox"
+            default=""            
+            />
+        <field
+            name="supplier_reference"
+            type="text"
+            label="COM_QUIPU_SUPPLIER_REF"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="invoice_file"
+            type="file"
+            label="COM_QUIPU_SUPPLIER_INVOICE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="id"
+            type="hidden"
+            />
+        <field
+            name="status"
+            type="hidden"
+            />        
+    </fieldset>
+    <fieldset name="memo">
+        <field
+            name="memo"
+            type="textarea"
+            rows="15"            
+            label="COM_QUIPU_MEMO"
+            class="inputbox"
+            default=""
+            />
+    </fieldset>
+    <fieldset name="actions">
+        <field
+            name="actions"
+            type="purchaseorderactions"
+            label="COM_QUIPU_"
+            class="inputbox"
+            default=""
+            />
+    </fieldset>
+    <fieldset name="detail">
+        <field
+            name="detail"
+            type="detailitems"
+            iw_master = "purchaseorder"
+            />
+    </fieldset>
+</form>
+

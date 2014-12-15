@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.site/administrator/index.php?option=com_quipu" />
+<title>customer_crud</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">customer_crud</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://beta.site/administrator/index.php?option=com_quipu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Acceso</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Clientes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Proveedores</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Categorías</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Productos y Servicios</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Compras</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Pedidos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Facturas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Bancos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Movimientos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Impuestos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Config</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Panel</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Clientes')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Clientes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Nombre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>CIF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Teléfono</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Persona de contacto </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td> Acciones </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.icon-32-new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Nuevo Cliente</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Campo requerido: Nombre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Campo requerido: CIF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>Cliente Selenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_vatno</td>
+	<td>CIFSELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_company_name</td>
+	<td>RAZÓN SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_address</td>
+	<td>DIRECCIÓN SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_phone</td>
+	<td>TELÉFONO SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_email</td>
+	<td>EMAIL@SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_contact</td>
+	<td>SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_payment_method</td>
+	<td>SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_memo</td>
+	<td>COMENTARIOS SELENIUM</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Aplicar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=dd.message.message &gt; ul &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Registrar Pedido</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Pedidos facturados: 0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>Cliente Selenium mod</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=dd.message.message &gt; ul &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_name</td>
+	<td>Cliente Selenium mod</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save-copy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_name</td>
+	<td>Cliente Selenium mod copia</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=dd.message.message &gt; ul &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filter_search</td>
+	<td>selenium</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Cliente Selenium mod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Cliente Selenium mod copia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Eliminar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>2 elementos eliminados correctamente.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Página 1 de</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=FINALIZAR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Iwerp - Administración</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Acceso a la Administración de Joomla!</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

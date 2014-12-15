@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details" label="COM_QUIPU_DETAILS">
+		<field
+			name="id"
+			type="hidden"
+		/>
+
+        <field
+			name="name"
+			type="text"
+			label="COM_QUIPU_NAME"
+			size="40"
+            required="true"
+			class="inputbox"
+			default=""
+		/>
+		<field 
+			name="category_id" 
+			type="sql" 
+			default="0" 
+			label="COM_QUIPU_ITEM_CATEGORY" 
+			query="SELECT id, name FROM #__quipu_item_category ORDER BY name"
+			key_field="id" 
+			value_field="name" />
+
+		<field 
+			name="tax_id" 
+			type="sql" 
+			default="0" 
+			label="COM_QUIPU_ITEM_TAX" 
+			query="SELECT id, name FROM #__quipu_tax ORDER BY name"
+			key_field="id" 
+			value_field="name" />
+
+        <field
+			name="cost_price_wotax"
+			type="text"
+			label="COM_QUIPU_COST_PRICE_WOTAX"
+			size="40"
+            required="false"
+			class="inputbox"
+			default="0.00"
+		/>
+	</fieldset>
+</form>
+

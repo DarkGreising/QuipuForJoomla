@@ -1,0 +1,103 @@
+Version 1.0.13
+==========================
+Issues (thanks Roberto Segura!)
+- Fixed asset loading problem in sites not using domaing root
+- Fixed short tags issue in order view 
+
+Version 1.0.12
+==========================
+Issues
+- Fixed "View Not Found" Error in some J3! sites that also had K2 installed.
+- Fixed focus error in order and purchase order items table in J3.X
+- Removed several calls to deprecated Joomla! APIs.
+- Code cleanup, preparing to implement new features.
+
+Version 1.0.11
+==========================
+Issues
+- Fixed an issue that caused PDF files would'nt be correctly generated when logo image was not available.
+- Fixed layout issues with Joomla 3.2
+
+
+
+Other changes
+
+Version 1.0.10
+==========================
+New features
+
+Issues
+- Fixed an issue that caused Quipu not to manage correctly the products and services import when the category was not found.
+- Fixed an issue that caused the invoicing chart not to display properly in some circumstances.
+- Fixed a layout issue when using Mission Control admin template.
+
+Other changes
+
+Version 1.0.9
+==========================
+New features:
+
+- Suppliers management:
+	- Basic create, edit, delete, copy operations.
+	- Import suppliers from CSV.
+	- Export suppliers list to excel.
+
+- Purchase orders management:
+	- Generate purchase order from supplier registry.
+	- Cancel purchase order.
+	- Print purchase order to pdf.
+	- Register supplier's invoice.
+	- Register payment movements for purchase order from bank movements area.
+	- Export purchase order list to excel.
+
+- Print order as quotation.
+
+- Changes in refunds to comply with tax law in some countries:
+	- Separate sequence for refund numbers.
+	- Include original invoice number in printed refunds.
+
+- Menu rearrangement in J3!
+
+Issues:
+- Fixed several issues that caused Quipu not to work correctly on Windows Servers (BUT BE WARNED: Quipu is not fully Windows compatible yet).
+- Fixed several minor layout & text issues.
+- Fixed an issue that caused the customer private area (frontend) not to render correctly on J3.
+- Fixed an issue that caused the "Email customer" button to freeze when an error ocurred in sending the message on J2.5
+
+Other changes:
+- Added sums to tables (orders, invoices, purchase orders), sensible to filters.
+- Support for french language
+
+
+Version 1.0.8 (Winter 2013)
+==========================
+New features:
+- Added a new configuration parameter to set the currency character. If not set, the default php locale configuration will be used to determine the currency symbol.
+
+Issues:
+- Fixed an issue that let the user set a discount bigger than 100%.
+- Fixed an error when another extension that used TCPDF was installed.
+- Changed the way the logo image is read when generating PDF files to solve issues with some hosting providers.
+
+Other changes:
+- TCPDF upgraded to version 5.9.202
+
+Version 1.0.7 (Winter 2013)
+===========================
+New features:
+ - New presentation layer for Joomla! 3, based on bootstrap and JQuery.
+
+Issues:
+ - Fixed an issue that made it possible to generate an invoice for an order without rows.
+ - Fixed error when configuration edit was cancelled.
+ - Fixed an issue that could cause errors when editing a customer in some cases.
+ - Fixed an issue that caused that when an overdued invoice was paid, the invoice status did not change accordingly.
+ - Fixed an issue that caused that the invoice date did not appear in invoice listing.
+ - Fixed an issue in orders list that caused refunded ones to be shown twice.
+ - Fixed an issue that caused refunds were not generated correctly in some cases.
+
+Other changes:
+ - Removed date range restriction when choosing the bank activity that pays an invoice.
+ - Added submenu in backend to better access to each area.
+
+ 

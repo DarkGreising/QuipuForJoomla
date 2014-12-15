@@ -1,0 +1,115 @@
+header.header h1{
+    background-color: transparent;
+    background-image: url('../images/logo81x30_w.png');
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    padding: 0 0 0 100px;    
+}
+
+table.dynamic .inputbox{
+    width: 90%; 
+}
+ul.quipu-actions li, p.addRow{
+    float: left;
+    margin: 0 5px 10px 5px;
+    width: 120px;
+    text-align: center;
+    overflow: hidden;
+}
+ul.quipu-actions li a, p.addRow a{
+    display: block;
+}
+ul.adminformlist ul.quipu-actions li a, p.addRow a:hover{
+    text-decoration:none;
+}
+
+p.addRow{
+    margin: 10px 0;
+    background: #fff;
+}
+p.addRow a{
+    color: #025A8D;
+    text-decoration: none;
+}
+p.addRow a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+div.validation-advice{
+    color: red;
+}
+.adminform img.logo{
+    max-width: 350px;    
+}
+
+td.actions{
+    text-align: center;
+}
+
+tr.status-9002{
+    color: #bbb;
+}
+tr.status-9002 a{
+    color: #679cba;
+}
+.iw-import, .iw-export{
+}
+.iw-import a, .iw-export a, .iw-import a:visited, .iw-export a:visited{
+}
+.iw-import{
+    
+}
+.iw-export{
+   float: right; 
+}
+.import-excel .buttons{
+    margin: 10px 0 20px 0;
+}
+.iw-list-side-col{       
+    overflow: hidden;
+}
+.adminlist.iw-with-sidecol{
+}
+.iw-list-side-col .iw-list-side-col-content{
+    margin: 0 10px;
+}
+
+.number{color: #000;font-family: monospace;font-size: 11px;}
+.negative.number{color: #f00;padding:2px 5px;}
+div.number, td.number, .table td.number, td.number input{text-align:right;}
+td.number.sum, .table td.number.sum{border-top: 1px solid #000;}
+
+.iw-inline-icon-16{
+    background-position:0 0;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+}
+
+a.disabled,a.disabled:visited,a.disable:active{
+    font-weight: normal;
+    color: #bbb;
+}
+a.disabled:hover{
+    text-decoration:none;
+    cursor: default;
+}
+div.row-detail{
+    color: #666;    
+    font-size: .95em;
+    text-align: right;
+}
+#payment-bank-activities .activities{    
+    border-top: 1px solid #ccc;
+    height: 370px;
+    overflow: auto;
+    padding-top: 10px;
+}
+#payment-bank-activities .activities ul li{
+    list-style-type: none;    
+}
+#payment-bank-activities .activities ul li:hover{
+    background: #f5f5f5;
+}

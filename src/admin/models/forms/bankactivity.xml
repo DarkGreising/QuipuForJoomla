@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" label="COM_QUIPU_DETAILS">
+        <field
+            name="id"
+            type="hidden"
+            />
+        <field  name="bank_account_id"
+                type="BANKACCOUNT"
+                class="inputbox"
+                filter="nombre"
+                label="COM_QUIPU_BANK"
+
+                />
+        <field
+            name="activity_date"
+            type="calendar"
+            label="COM_QUIPU_DATE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="value_date"
+            type="calendar"
+            label="COM_QUIPU_VALUE_DATE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="description"
+            type="text"
+            label="COM_QUIPU_ACTIVITY_DESCRIPTION"
+            size="40"
+            required="true"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="amount"
+            type="text"
+            label="COM_QUIPU_AMOUNT"
+            size="40"
+            required="true"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="balance"
+            type="text"
+            label="COM_QUIPU_BALANCE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+        <field
+            name="ref"
+            type="text"
+            label="COM_QUIPU_REFERENCE"
+            size="40"
+            class="inputbox"
+            default=""
+            />
+
+    </fieldset>
+</form>
+

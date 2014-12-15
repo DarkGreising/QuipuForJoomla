@@ -1,0 +1,77 @@
+#panel-widgets.widgets-2-cols{
+    width:840px;
+}
+#panel-widgets.widgets-3-cols{
+
+}
+
+#panel-widgets{
+    margin: auto;
+}
+#panel-widgets .widget{
+    float: left;
+    margin: 0 10px 20px 0;
+    display: block;
+    min-height: 130px;
+}
+#panel-widgets .widget-body{
+    border: 3px solid #ddd;  
+    border-radius: 3px;
+    overflow: hidden;
+}
+#panel-widgets .widget .widget-body .widget-info{
+    margin: 10px;
+}
+#panel-widgets .widget h2, #panel-widgets .w1x h2, #panel-widgets .w2x h2{
+    margin: 0;
+    line-height: 29px;
+    padding: 0 15px 0 5px;
+    height: 29px;     
+    display:block;
+}
+#panel-widgets .w1x{width:400px;overflow: hidden;}
+#panel-widgets .w2x{width:810px;overflow: hidden;}
+
+#panel-widget-table{
+
+}
+
+#panel-widget-chart{
+
+}
+
+.clear-right{
+    clear: right;
+}
+.clear-left{
+    clear: left;
+}
+table.widgettable{
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+table.widgettable thead th{
+    text-align: center;
+    color: #fff;    
+    background: #2C4D59;
+    font-weight: normal;
+}
+table.widgettable td, table.widgettable th{
+    border: 1px solid #4F6971;
+    padding: 5px;
+}
+table.widgettable td.grouplabel{
+    text-align:left;
+    background: #d3dddd;
+}
+table.widgettable td{
+    text-align: right;
+}
+table.widgettable th{
+    color: #4F6971;
+    font-weight: bold;    
+    background:#D3DDDD;
+}
+.widget-chart-pie{
+    margin: 50px 0;    
+}

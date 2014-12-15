@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://beta.site/administrator/index.php?option=com_quipu" />
+<title>25_en_create_edit_order</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">25_en_create_edit_order</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/administrator/index.php?option=com_quipu&amp;view=customers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=SELENIUM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Print</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Email customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Invoice order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Cancel order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_memo</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.icon-32-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No rows.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Add row</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add row</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=data[item_id]</td>
+	<td>label=SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[1][memo]</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[1][units]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[1][unit_price]</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:WARNING: Your cost price for this item is 100.00 €, so you are losing 10.00 € on this order row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='dynTable']/tbody/tr/td[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[1][unit_price]</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[1][discount]</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You can not set a discount bigger than 100%!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='dynTable']/tbody/tr/td[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[1][discount]</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Item successfully saved.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_memo</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>SELENIUM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=td.delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>0.00</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>12.00</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>145.20 €</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=filter_estado</td>
+	<td>label=Pending</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=10001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Pending</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=filter_estado</td>
+	<td>label=Filter by State</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=10001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=filter_cliente</td>
+	<td>label=SELENIUM</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=10001</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=filter_cliente</td>
+	<td>label=Filter by Customer</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SELENIUM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_name</td>
+	<td>SELENIUM</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='iw_grid']/div[2]/ul/li/div[2]</td>
+	<td>10001</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='iw_grid']/div[2]/ul/li/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cancel order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Order cancelled</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='adminForm']/table/tbody/tr/td[6]</td>
+	<td>Cancelled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SELENIUM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invoiced orders: 0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add row</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=data[item_id]</td>
+	<td>label=SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[3][memo]</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[3][units]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[3][unit_price]</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jform_customer_reference</td>
+	<td>customer ref</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_customer_reference</td>
+	<td>customer ref</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Save &amp; Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.orders.1.1</td>
+	<td>10002</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='adminForm']/table/tbody/tr/td[6]</td>
+	<td>Pending</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='adminForm']/table/tbody/tr[2]/td[6]</td>
+	<td>Cancelled</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.orders.1.4</td>
+	<td>145.20 €</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.orders.2.4</td>
+	<td>145.20 €</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SELENIUM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='iw_grid']/div[2]/ul/li/div[2]</td>
+	<td>10002</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='iw_grid']/div[2]/ul/li[2]/div[2]</td>
+	<td>10001</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='iw_grid']/div[2]/ul/li/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Invoice order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Order invoiced</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Invoice 10001 (Issued)</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_payment_date</td>
+	<td>0000-00-00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_payment_method</td>
+	<td>PAYMENT METHOD</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_customer_reference</td>
+	<td>customer ref</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_invoice_number</td>
+	<td>10001</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_base</td>
+	<td>120.00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_total_tax</td>
+	<td>25.20</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_retentions</td>
+	<td>0.00</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=dd.message.message &gt; ul &gt; li</td>
+	<td>Item successfully saved.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Item successfully saved.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Invoices</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.1.1</td>
+	<td>10001</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.1.5</td>
+	<td>145.20 €</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.icon-32-print</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Customers')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SELENIUM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invoiced orders: 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Total customer profitability: 45.20 €</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Order 10003 (Pending)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Invoice order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=dd.error.message &gt; ul &gt; li</td>
+	<td>You cannot issue an invoice from an order that has no rows.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add row</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=data[item_id]</td>
+	<td>label=SELENIUM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[4][units]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=data[4][unit_price]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.icon-32-apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=dd.message.message &gt; ul &gt; li</td>
+	<td>Item successfully saved.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Invoice order</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invoice 10002 (Issued)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_base</td>
+	<td>100.00</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=jform_total_tax</td>
+	<td>21.00</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Issue a refund</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=dd.message.message &gt; ul &gt; li</td>
+	<td>Refund issued successfully</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Invoice 10003 (Refund)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Save &amp; Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.1.5</td>
+	<td>-121.00 €</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.2.5</td>
+	<td>121.00 €</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.1.6</td>
+	<td>Refund</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>css=table.adminlist.2.6</td>
+	<td>Refunded</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
